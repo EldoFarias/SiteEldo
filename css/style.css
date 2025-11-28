@@ -725,6 +725,7 @@ section {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     height: 250px;
+    background: var(--bg-primary);
 }
 
 .portfolio-image img {
@@ -732,11 +733,9 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition-slow);
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    position: relative;
-    z-index: 1;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .portfolio-overlay {
@@ -750,14 +749,15 @@ section {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: var(--transition-base);
+    visibility: hidden;
+    transition: opacity var(--transition-base), visibility var(--transition-base);
     padding: var(--spacing-md);
-    z-index: 2;
     pointer-events: none;
 }
 
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 
