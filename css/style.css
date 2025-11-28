@@ -153,16 +153,19 @@ section {
 }
 
 .logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: var(--gradient-1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: flex;
+    align-items: center;
 }
 
-.logo .highlight {
-    color: var(--primary-color);
+.logo-svg {
+    height: 40px;
+    width: auto;
+    transition: var(--transition-base);
+}
+
+.logo-svg:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 5px 15px rgba(102, 126, 234, 0.4));
 }
 
 .nav-menu {
@@ -635,6 +638,35 @@ section {
 
 .portfolio {
     background: var(--bg-secondary);
+}
+
+.portfolio-disclaimer {
+    max-width: 800px;
+    margin: var(--spacing-md) auto 0;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+}
+
+.portfolio-disclaimer i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.portfolio-disclaimer p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.portfolio-disclaimer strong {
+    color: var(--primary-color);
 }
 
 .portfolio-filters {
@@ -1175,17 +1207,15 @@ section {
     margin-bottom: var(--spacing-md);
 }
 
-.footer-logo h3 {
-    font-size: 2rem;
+.footer-logo-svg {
+    height: 40px;
+    width: auto;
     margin-bottom: var(--spacing-sm);
-}
-
-.footer-logo .highlight {
-    color: var(--primary-color);
 }
 
 .footer-logo p {
     color: var(--text-secondary);
+    margin-top: var(--spacing-sm);
 }
 
 .footer-links h4,

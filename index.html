@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eldo da Silva Farias - Desenvolvedor Full-Stack com 12 anos de experiência em aplicativos mobile, sites, dashboards e soluções tecnológicas.">
+    <meta name="description" content="Eldo Farias - Desenvolvedor Full-Stack com 12 anos de experiência em aplicativos mobile, sites, dashboards e soluções tecnológicas.">
     <meta name="keywords" content="desenvolvedor, full-stack, mobile, android, flutter, C#, .NET, kotlin, java">
-    <meta name="author" content="Eldo da Silva Farias">
+    <meta name="author" content="Eldo Farias">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -40,7 +40,24 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#home">&lt;Eldo<span class="highlight">/&gt;</span></a>
+                <a href="#home">
+                    <svg class="logo-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background shape -->
+                        <defs>
+                            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Modern hexagon background -->
+                        <path d="M10 20 L20 10 L40 10 L50 20 L40 30 L20 30 Z" fill="url(#logoGradient)" opacity="0.2"/>
+                        <!-- Letters E S F -->
+                        <text x="15" y="27" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="url(#logoGradient)">ESF</text>
+                        <!-- Accent line -->
+                        <line x1="60" y1="20" x2="115" y2="20" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6"/>
+                        <circle cx="115" cy="20" r="3" fill="#667eea"/>
+                    </svg>
+                </a>
             </div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Início</a></li>
@@ -64,7 +81,7 @@
             <div class="hero-content">
                 <p class="hero-greeting" data-aos="fade-down">Olá, eu sou</p>
                 <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
-                    Eldo da Silva Farias
+                    Eldo Farias
                 </h1>
                 <div class="hero-title" data-aos="fade-up" data-aos-delay="200">
                     <span class="typing-text"></span>
@@ -82,16 +99,16 @@
                     </a>
                 </div>
                 <div class="social-links" data-aos="fade-up" data-aos-delay="500">
-                    <a href="https://github.com" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/EldoFarias" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+                    <a href="https://wa.me/5511959069133" target="_blank" aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-                    <a href="mailto:contato@eldofarias.com" aria-label="Email">
+                    <a href="mailto:eldofarias81@outlook.com" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -258,6 +275,11 @@
                 <h2 class="section-title">Portfólio</h2>
                 <div class="title-underline"></div>
                 <p class="section-subtitle">Projetos desenvolvidos ao longo da minha carreira</p>
+                <div class="portfolio-disclaimer" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-info-circle"></i>
+                    <p><strong>Nota:</strong> Os projetos abaixo são demonstrações para fins ilustrativos.
+                    Projetos desenvolvidos para clientes são particulares e confidenciais, portanto não estão divulgados publicamente neste portfólio.</p>
+                </div>
             </div>
 
             <!-- Filter Buttons -->
@@ -285,11 +307,8 @@
                                     <span>API Rest</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://play.google.com" target="_blank" class="portfolio-link">
-                                        <i class="fab fa-google-play"></i> Google Play
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="1">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -311,11 +330,8 @@
                                     <span>SQL Server</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://demo.example.com" target="_blank" class="portfolio-link">
-                                        <i class="fas fa-external-link-alt"></i> Ver Demo
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="2">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -337,11 +353,8 @@
                                     <span>Node.js</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://github.com" target="_blank" class="portfolio-link">
-                                        <i class="fab fa-github"></i> GitHub
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="3">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -363,11 +376,8 @@
                                     <span>Google Maps</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://play.google.com" target="_blank" class="portfolio-link">
-                                        <i class="fab fa-google-play"></i> Google Play
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="4">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -389,11 +399,8 @@
                                     <span>JavaScript</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://example.com" target="_blank" class="portfolio-link">
-                                        <i class="fas fa-external-link-alt"></i> Visitar Site
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="5">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -415,11 +422,8 @@
                                     <span>Firebase Auth</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://apps.apple.com" target="_blank" class="portfolio-link">
-                                        <i class="fab fa-app-store-ios"></i> App Store
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="6">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -441,11 +445,8 @@
                                     <span>SQL</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://demo.example.com" target="_blank" class="portfolio-link">
-                                        <i class="fas fa-external-link-alt"></i> Ver Demo
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="7">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -467,11 +468,8 @@
                                     <span>MongoDB</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://platform.example.com" target="_blank" class="portfolio-link">
-                                        <i class="fas fa-external-link-alt"></i> Acessar
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="8">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -493,11 +491,8 @@
                                     <span>Room DB</span>
                                 </div>
                                 <div class="portfolio-links">
-                                    <a href="https://play.google.com" target="_blank" class="portfolio-link">
-                                        <i class="fab fa-google-play"></i> Google Play
-                                    </a>
                                     <button class="portfolio-link view-details" data-project="9">
-                                        <i class="fas fa-info-circle"></i> Detalhes
+                                        <i class="fas fa-info-circle"></i> Ver Detalhes
                                     </button>
                                 </div>
                             </div>
@@ -705,7 +700,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>Email</h4>
-                                <a href="mailto:contato@eldofarias.com">contato@eldofarias.com</a>
+                                <a href="mailto:eldofarias81@outlook.com">eldofarias81@outlook.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -714,7 +709,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>WhatsApp</h4>
-                                <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a>
+                                <a href="https://wa.me/5511959069133" target="_blank">(11) 95906-9133</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -723,7 +718,7 @@
                             </div>
                             <div class="contact-text">
                                 <h4>LinkedIn</h4>
-                                <a href="https://linkedin.com" target="_blank">linkedin.com/in/eldofarias</a>
+                                <a href="https://linkedin.com" target="_blank">linkedin.com</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -732,22 +727,22 @@
                             </div>
                             <div class="contact-text">
                                 <h4>GitHub</h4>
-                                <a href="https://github.com" target="_blank">github.com/eldofarias</a>
+                                <a href="https://github.com/EldoFarias" target="_blank">github.com/EldoFarias</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="contact-social">
-                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <a href="https://github.com/EldoFarias" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+                        <a href="https://wa.me/5511959069133" target="_blank" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="mailto:contato@eldofarias.com" aria-label="Email">
+                        <a href="mailto:eldofarias81@outlook.com" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -791,7 +786,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>&lt;Eldo<span class="highlight">/&gt;</span></h3>
+                    <svg class="logo-svg footer-logo-svg" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logoGradientFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M10 20 L20 10 L40 10 L50 20 L40 30 L20 30 Z" fill="url(#logoGradientFooter)" opacity="0.2"/>
+                        <text x="15" y="27" font-family="Poppins, sans-serif" font-size="18" font-weight="700" fill="url(#logoGradientFooter)">ESF</text>
+                        <line x1="60" y1="20" x2="115" y2="20" stroke="url(#logoGradientFooter)" stroke-width="2" opacity="0.6"/>
+                        <circle cx="115" cy="20" r="3" fill="#667eea"/>
+                    </svg>
                     <p>Transformando ideias em soluções tecnológicas</p>
                 </div>
                 <div class="footer-links">
@@ -806,20 +812,20 @@
                 <div class="footer-social">
                     <h4>Redes Sociais</h4>
                     <div class="social-icons">
-                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                        <a href="https://github.com/EldoFarias" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp">
+                        <a href="https://wa.me/5511959069133" target="_blank" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Eldo da Silva Farias. Todos os direitos reservados.</p>
+                <p>&copy; 2024 Eldo Farias. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>

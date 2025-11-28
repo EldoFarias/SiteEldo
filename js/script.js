@@ -500,27 +500,47 @@ function initContactForm() {
                 message: form.message.value
             };
 
-            // Simulate form submission (replace with actual API call)
+            // Send email using FormData and mailto
             try {
-                // Simulating API call with timeout
-                await new Promise(resolve => setTimeout(resolve, 2000));
+                // Criar corpo do email
+                const emailSubject = `Contato do Site: ${formData.subject}`;
+                const emailBody = `Nome: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMensagem:%0D%0A${formData.message}`;
 
-                // Success
-                formMessage.textContent = 'Mensagem enviada com sucesso! Retornarei em breve.';
-                formMessage.className = 'form-message success';
-                formMessage.style.display = 'block';
-                form.reset();
+                // Opção 1: Usar mailto (abre cliente de email do usuário)
+                // window.location.href = `mailto:eldofarias81@outlook.com?subject=${encodeURIComponent(emailSubject)}&body=${emailBody}`;
 
-                // Here you would normally send the data to your backend:
-                // const response = await fetch('/api/contact', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify(formData)
-                // });
+                // Opção 2: Enviar para um backend (recomendado)
+                // Para usar esta opção, você precisará criar um backend simples
+                // Por enquanto, vamos usar o Formspree (gratuito)
+
+                const response = await fetch('https://formspree.io/f/xanyqpjb', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: formData.name,
+                        email: formData.email,
+                        subject: formData.subject,
+                        message: formData.message,
+                        _replyto: formData.email,
+                        _subject: `Contato do Site: ${formData.subject}`
+                    })
+                });
+
+                if (response.ok) {
+                    // Success
+                    formMessage.textContent = 'Mensagem enviada com sucesso! Retornarei em breve.';
+                    formMessage.className = 'form-message success';
+                    formMessage.style.display = 'block';
+                    form.reset();
+                } else {
+                    throw new Error('Erro no envio');
+                }
 
             } catch (error) {
-                // Error
-                formMessage.textContent = 'Erro ao enviar mensagem. Tente novamente.';
+                // Error - Fallback para mailto
+                formMessage.innerHTML = 'Não foi possível enviar automaticamente. <a href="mailto:eldofarias81@outlook.com?subject=Contato do Site&body=Nome: ' + formData.name + '%0D%0AEmail: ' + formData.email + '%0D%0A%0D%0A' + formData.message + '" style="color: var(--primary-color); text-decoration: underline;">Clique aqui para abrir seu cliente de email</a>.';
                 formMessage.className = 'form-message error';
                 formMessage.style.display = 'block';
             } finally {
