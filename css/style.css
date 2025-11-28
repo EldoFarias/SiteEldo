@@ -706,17 +706,25 @@ section {
     border-radius: 15px;
     overflow: hidden;
     transition: var(--transition-base);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .portfolio-item.hide {
     display: none;
 }
 
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
 .portfolio-image {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
-    height: 350px;
+    border-radius: 15px 15px 0 0;
+    height: 250px;
 }
 
 .portfolio-image img {
@@ -724,6 +732,7 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition-slow);
+    display: block;
 }
 
 .portfolio-overlay {
@@ -786,10 +795,43 @@ section {
     justify-content: center;
 }
 
+/* Info visível do card (fora do overlay) */
+.portfolio-info {
+    padding: var(--spacing-md);
+    background: var(--bg-card);
+}
+
+.portfolio-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.portfolio-info p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.portfolio-info .portfolio-tags {
+    margin-bottom: var(--spacing-sm);
+}
+
+.portfolio-info .portfolio-tags span {
+    padding: 0.3rem 0.8rem;
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
 .portfolio-link {
     padding: 0.7rem 1.2rem;
-    background: white;
-    color: var(--primary-color);
+    background: var(--gradient-1);
+    color: white;
     border-radius: 50px;
     font-weight: 600;
     transition: var(--transition-base);
@@ -799,11 +841,13 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .portfolio-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 /* ==========================================

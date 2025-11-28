@@ -5,7 +5,8 @@
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nVersão inicial do portfólio profissional\n\n- Estrutura HTML completa com todas as seções\n- Design moderno com tema dark mode tech\n- Animações e efeitos interativos (AOS, Particles.js)\n- 9 projetos de exemplo no portfólio\n- Filtro interativo de projetos\n- Modal de detalhes dos projetos\n- Formulário de contato funcional\n- Slider de depoimentos\n- 100% responsivo (mobile-first)\n- Documentação completa (README.md e GUIA_RAPIDO.md)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nCorreções e melhorias do portfólio\n\n- Criado logo SVG moderno com iniciais ESF\n- Atualizado nome para ''Eldo Farias'' (removido Silva)\n- Atualizados todos os links de redes sociais:\n  * GitHub: https://github.com/EldoFarias\n  * WhatsApp: 11959069133\n  * Email: eldofarias81@outlook.com\n- Removidos links externos dos projetos\n- Adicionada mensagem de disclaimer sobre projetos de demonstração\n- Configurado formulário de contato com Formspree\n- Adicionados estilos CSS para logo e disclaimer\n- Criado guia de configuração de email (CONFIGURACAO_EMAIL.md)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
