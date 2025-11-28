@@ -733,6 +733,10 @@ section {
     object-fit: cover;
     transition: var(--transition-slow);
     display: block;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    z-index: 1;
 }
 
 .portfolio-overlay {
@@ -748,10 +752,13 @@ section {
     opacity: 0;
     transition: var(--transition-base);
     padding: var(--spacing-md);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .portfolio-item:hover .portfolio-image img {
