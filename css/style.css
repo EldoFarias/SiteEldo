@@ -725,7 +725,10 @@ section {
     overflow: hidden;
     border-radius: 15px 15px 0 0;
     height: 250px;
-    background: var(--bg-primary);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio-image img {
@@ -733,11 +736,48 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition-base);
-    display: block;
+    display: none;
 }
 
-.portfolio-item:hover .portfolio-image img {
-    transform: scale(1.05);
+/* Placeholder para cada projeto com cores diferentes */
+.portfolio-item[data-category="mobile"]:nth-child(1) .portfolio-image {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.portfolio-item[data-category="web"]:nth-child(2) .portfolio-image {
+    background: linear-gradient(135deg, #764ba2, #f093fb);
+}
+
+.portfolio-item[data-category="dashboard"]:nth-child(3) .portfolio-image {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.portfolio-item[data-category="mobile"]:nth-child(4) .portfolio-image {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.portfolio-item[data-category="web"]:nth-child(5) .portfolio-image {
+    background: linear-gradient(135deg, #00f2fe, #43e97b);
+}
+
+.portfolio-item[data-category="mobile"]:nth-child(6) .portfolio-image {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.portfolio-item[data-category="dashboard"]:nth-child(7) .portfolio-image {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+}
+
+.portfolio-item[data-category="web"]:nth-child(8) .portfolio-image {
+    background: linear-gradient(135deg, #fee140, #30cfd0);
+}
+
+.portfolio-item[data-category="mobile"]:nth-child(9) .portfolio-image {
+    background: linear-gradient(135deg, #30cfd0, #330867);
+}
+
+.portfolio-item:hover .portfolio-image {
+    transform: scale(1.02);
 }
 
 /* Info visível do card (fora do overlay) */
