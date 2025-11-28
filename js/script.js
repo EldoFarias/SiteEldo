@@ -513,7 +513,7 @@ function initContactForm() {
                 // Para usar esta opção, você precisará criar um backend simples
                 // Por enquanto, vamos usar o Formspree (gratuito)
 
-                const response = await fetch('https://formspree.io/f/xanyqpjb', {
+                const response = await fetch('https://formspree.io/f/xzzlywko', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
